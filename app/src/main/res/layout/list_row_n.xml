@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp"
+    >
+
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/note_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket No.: "
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#343434"
+        android:layout_weight="3"
+        android:layout_marginTop="1dip"
+        android:text="Test Notification: Get 10% discount on your first service. Avail it soon. Test Notification: Get 10% discount on your first service. Avail it soon. " />
+
+
+
+</RelativeLayout>

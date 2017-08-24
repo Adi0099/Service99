@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ffa500</color>
+    <color name="list_background">#ffffff</color>
+    <color name="list_item_title">#272727</color>
+    <!--<color name="action">#ececec</color>-->
+
+    <color name="list_background_pressed">#e5e5e5</color>
+
+    <color name="color_preloader_start">#000000</color>
+    <color name="color_preloader_center">#000000</color>
+    <color name="color_preloader_end">#ff56a9c7</color>
+
+
+    <color name="list_divider1">#ffffff</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+    <color name="list_divider">#E0E0E0</color>
+
+
+</resources>

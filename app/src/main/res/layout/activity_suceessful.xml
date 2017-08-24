@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+  >
+
+    <TextView
+
+        android:textSize="32dp"
+        android:textColor="#ffa500"
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="SUCCESS !!!"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+
+        android:textSize="20dp"
+        android:textColor="#ffa500"
+        android:id="@+id/subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You  for  your Booking"
+        android:layout_below="@+id/code"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1" />
+
+    <!--<TextView-->
+
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="#ffa500"-->
+        <!--android:id="@+id/textView3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="  "-->
+        <!--android:layout_below="@+id/subheading"-->
+        <!--android:layout_alignLeft="@+id/button1"-->
+        <!--android:layout_alignStart="@+id/button1" />-->
+
+    <TextView
+
+        android:textSize="20dp"
+        android:textColor="#ffa500"
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" We will be calling you shortly"
+
+        android:layout_gravity="center"
+        android:layout_below="@+id/subheading"
+        android:layout_alignLeft="@+id/subheading"
+        android:layout_alignStart="@+id/subheading" />
+
+    <Button
+        android:textSize="20dp"
+
+        android:textColor="#fff"
+        android:id="@+id/redirect"
+        android:background="#ffa500"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="49dp"
+        android:text="Home"
+        android:layout_below="@+id/message"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/button1"
+        android:background="@drawable/sucess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/heading"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/code" />
+
+    <TextView
+        android:textColor="#358ef2"
+        android:id="@+id/code"
+
+        android:text="Your Booking Number :"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35dp"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asdfghjklzx"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/job_no"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:textSize="15dp"
+
+        android:layout_above="@+id/subheading"
+        android:layout_toRightOf="@+id/code"
+        android:layout_toEndOf="@+id/code" />
+
+</RelativeLayout>

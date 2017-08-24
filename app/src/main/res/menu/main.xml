@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    tools:context="com.navigation.drawer.activity.MainActivity">
+
+    <item android:id="@+id/refresh"
+        android:icon="@drawable/r3"
+        android:title="Refresh"
+        android:alphabeticShortcut="r"
+        android:orderInCategory="1"
+        yourapp:showAsAction="always" />
+</menu>

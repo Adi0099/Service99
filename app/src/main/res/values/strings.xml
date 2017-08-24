@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Service99</string>
+    <string name="open_drawer">Service99</string>
+    <string name="close_drawer">Service99</string>
+    <string name="select_location">Service99</string>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string-array name="Services">
+        <item>AC</item>
+        <item>Refrigerator</item>
+        <item>Earth</item>
+        <item>Mobile</item>
+        <item>Punbing </item>
+        <item>Electrical</item>
+        <item>Appliances</item>
+        <item>Computers</item>
+        <item>RO</item>
+        <item>Home Security</item>
+
+    </string-array>
+</resources>

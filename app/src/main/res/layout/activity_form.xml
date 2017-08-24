@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan">
+
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo"
+                android:layout_gravity="center" />
+            <View
+                android:id="@+id/bar"
+                android:layout_width="wrap_content"
+                android:background="@drawable/gradient_line"
+                android:layout_height="8dp"
+                android:layout_below="@+id/image"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Book Technician"
+                android:textColor="#ffa333"
+                android:lines="1"
+                android:layout_weight="3"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book An Appliences Repair Technician?"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="3"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/rounded_layout"
+                android:layout_weight="5.90">
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:hint="NAME"
+                    android:maxLength="50"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp">
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/houseNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/name"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="HOUSE NO,FLAT NO"
+                    android:layout_marginBottom="20dp"
+                    android:maxLength="50"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp">
+
+                </EditText>
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/colony"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/houseNo"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="SECTOR LOCALITY COLONY"
+                    android:layout_marginBottom="20dp"
+
+                    android:maxLength="100"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp">
+
+                </android.support.v7.widget.AppCompatAutoCompleteTextView>
+
+                <Spinner
+                    android:id="@+id/service_need"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/colony"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:spinnerMode="dropdown"
+                    android:ems="10"
+                    android:hint="What Service You Need"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/service_need"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="MOBILE"
+                    android:layout_marginBottom="20dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/mobile"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:inputType="textEmailAddress"
+                    android:hint="EMAIL"
+                    android:layout_marginBottom="20dp"
+                    android:maxLength="50"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/problem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/email"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="DESCRIBE ABOUT THE PROBLEM"
+                    android:layout_marginBottom="20dp"
+                    android:maxLength="160"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonshape"
+                    android:text="Book Your Service"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/problem"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy to help you"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

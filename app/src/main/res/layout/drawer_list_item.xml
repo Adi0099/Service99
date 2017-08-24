@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/list_selector">
+
+    <ImageView
+        android:id="@+id/item_icon_imgview"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/desc_list_item_icon" />
+
+
+    <TextView
+        android:id="@+id/item_name_txtview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/item_icon_imgview"
+
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:paddingRight="0dp"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="@color/list_item_title" />
+
+
+</RelativeLayout>
+

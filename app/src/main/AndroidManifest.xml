@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.enventpc_03.service99">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:clearTaskOnLaunch="true"
+        android:icon="@drawable/splash"
+        android:label="@string/app_name"
+        android:noHistory="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BaseActivity">
+            <!--<intent-filter>-->
+                <!--<category android:name="android.intent.category." />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+
+            />
+        <activity
+            android:name=".ServiceRequest"
+            android:allowTaskReparenting="true"
+            android:alwaysRetainTaskState="false"
+            android:clearTaskOnLaunch="true"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:noHistory="true"
+            android:stateNotNeeded="true">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".Track_Ticket" />
+        <activity android:name=".Notification1" />
+        <activity android:name=".Contact_Us" />
+        <activity android:name=".Form" />
+
+        <service android:name=".MyService" />
+
+        <activity
+            android:name=".Suceessful"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".Details"></activity>
+        <activity android:name=".Push"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

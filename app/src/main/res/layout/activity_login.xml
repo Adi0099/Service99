@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo"
+                android:layout_gravity="center" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/gradient_line"
+                android:layout_height="8dp"
+                android:layout_marginBottom="10dp">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="310dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/rounded_layout">
+
+                <EditText
+                    android:id="@+id/editText_enter_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="Full Name"
+                    android:layout_marginBottom="20dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp">
+
+
+                </EditText>
+
+
+
+                <EditText
+                android:id="@+id/editText_mobNo"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editText_enter_name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_textbox"
+                android:ems="10"
+                    android:layout_marginBottom="20dp"
+                android:hint="Enter 10 Digit Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                    android:textSize="17dp">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editText_mobNo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_textbox"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:hint="Email"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp">
+
+            </EditText>
+
+                <Button
+                    android:id="@+id/button_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonshape"
+                    android:text="Register"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/editText_email"
+                    android:layout_marginBottom="20dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy to help you"
+                android:textSize="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

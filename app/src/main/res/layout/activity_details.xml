@@ -1,0 +1,322 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan">
+
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo"
+                android:layout_gravity="center" />
+            <View
+                android:id="@+id/bar"
+                android:layout_width="wrap_content"
+                android:background="@drawable/gradient_line"
+                android:layout_height="8dp"
+                android:layout_below="@+id/image"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Service Details"
+                android:textColor="#ffa333"
+                android:lines="1"
+                android:layout_weight="3"
+                android:textSize="25dp"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/rounded_layout"
+                android:layout_weight="5.90">
+
+
+                <TextView
+                    android:id="@+id/ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Ticket No. : "
+                    android:layout_marginBottom="5dp"
+                    android:textSize="17dp"
+                    android:layout_alignRight="@+id/customer"
+                    android:layout_alignEnd="@+id/customer">
+
+                    <requestFocus />
+                </TextView>
+
+                <TextView
+                    android:id="@+id/service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Service Name : "
+                    android:textSize="17dp"
+                    android:layout_below="@+id/ticket_no"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+
+                </TextView>
+
+               <TextView
+                    android:id="@+id/registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                   android:hint="Registration Date:"
+
+                   android:textSize="17dp"
+                   android:paddingRight="10dp"
+                   android:layout_below="@+id/service"
+                   android:layout_alignLeft="@+id/service"
+                   android:layout_alignStart="@+id/service">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/due"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Due Date : "
+                    android:textSize="17dp"
+                    android:layout_below="@+id/registration"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/registration"
+                    android:layout_alignEnd="@+id/registration">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Status : "
+                    android:textSize="17dp"
+
+                    android:layout_below="@+id/due"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" AAAAAAAAAA  "
+                    android:textSize="17dp"
+                    android:id="@+id/ticket_no"
+                    android:layout_alignTop="@+id/ticket"
+                    android:layout_alignLeft="@+id/service_name"
+                    android:layout_alignStart="@+id/service_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Refrigerator "
+                    android:textSize="17dp"
+                    android:id="@+id/service_name"
+                    android:layout_below="@+id/ticket_no"
+                    android:layout_toRightOf="@+id/jobbrief"
+                    android:layout_toEndOf="@+id/jobbrief" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/20/2016"
+                    android:textSize="17dp"
+                    android:maxLength="10"
+                    android:id="@+id/registration_date"
+                    android:layout_below="@+id/service_name"
+                    android:layout_alignLeft="@+id/due_date"
+                    android:layout_alignStart="@+id/due_date" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/20/2016"
+                    android:textSize="17dp"
+                    android:id="@+id/due_date"
+                    android:layout_below="@+id/registration_date"
+                    android:layout_alignLeft="@+id/service_name"
+                    android:layout_alignStart="@+id/service_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:text="House No : "
+                    android:textSize="17dp"
+                    android:id="@+id/house"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/status"
+                    android:layout_alignLeft="@+id/area"
+                    android:layout_alignStart="@+id/area"
+                    android:layout_marginTop="82dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/house_no"
+                    android:layout_below="@+id/house"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Locality : "
+                    android:textSize="17dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/area"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/house_no"
+                    android:layout_alignLeft="@+id/house_no"
+                    android:layout_alignStart="@+id/house_no" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/area_detail"
+                    android:layout_below="@+id/area"
+                    android:textSize="17dp"/>
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Landmark : "-->
+                    <!--android:textSize="17dp"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:id="@+id/landmark"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_below="@+id/area_detail"-->
+                    <!--android:layout_alignLeft="@+id/area_detail"-->
+                    <!--android:layout_alignStart="@+id/area_detail" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="New Text"-->
+                    <!--android:id="@+id/landmark_detail"-->
+                    <!--android:layout_below="@+id/landmark"-->
+                    <!--android:textSize="17dp"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Problem Description : "
+                    android:textSize="17dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/jobbrief"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/area_detail"
+                    android:layout_alignLeft="@+id/area_detail"
+                    android:layout_alignStart="@+id/area_detail" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/jobbrief_d"
+                    android:layout_below="@+id/jobbrief"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Technician Name : "
+                    android:textSize="17dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/technician"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/jobbrief_d"
+                    android:layout_alignLeft="@+id/jobbrief_d"
+                    android:layout_alignStart="@+id/jobbrief_d" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/technician_name"
+                    android:layout_below="@+id/technician"
+                    android:textSize="17dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Under process"
+                    android:textSize="17dp"
+
+                    android:id="@+id/status_d"
+                    android:layout_above="@+id/house"
+                    android:layout_alignLeft="@+id/due_date"
+                    android:layout_alignStart="@+id/due_date" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name :"
+                    android:id="@+id/customer"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_above="@+id/customer_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:textSize="17dp"
+                    android:id="@+id/customer_name"
+                    android:layout_marginBottom="36dp"
+                    android:layout_above="@+id/house_no"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy to help you"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ListView
+        android:id="@+id/list_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_row_selector"
+        android:dividerHeight="1dp"
+        android:divider="@drawable/list_divider"
+        android:background="@color/list_divider1"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view"
+        android:background="@drawable/no_wifi"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Check Your Connection"
+        android:textSize="20dp"
+        android:id="@+id/err"
+        android:layout_below="@+id/image_view"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+</RelativeLayout>
